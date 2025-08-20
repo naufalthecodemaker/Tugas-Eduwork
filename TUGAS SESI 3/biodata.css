@@ -1,0 +1,136 @@
+/* ====== GLOBAL ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Hero / Header */
+header {
+  background: linear-gradient(135deg, #3a99ff 0%, #8453d3 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3.5rem;  
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 1.4rem;   
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+header img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+/* Section Title */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Biodata */
+#biodata .card {
+  border: none;
+  background: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#biodata .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Portfolio */
+#portofolio .card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#portofolio .card img {
+  transition: transform 0.3s ease;
+}
+
+#portofolio .card:hover img {
+  transform: scale(1.1);
+}
+
+#portofolio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  background: #007bff;
+  color: #fff;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+footer:hover {
+  color: #fff;
+}
