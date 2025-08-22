@@ -1,0 +1,400 @@
+html {
+  scroll-padding-top: 67px; /* sesuaikan dengan tinggi navbar */
+  scroll-behavior: smooth;  /* biar halus saat klik */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 90px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar custom style */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #6200ff) !important; /* biru → ungu */
+  padding: 12px 0;
+}
+
+/* Brand text */
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #ffd700 !important; /* emas saat hover */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  color: #ffd700 !important;
+  font-weight: 600;
+}
+
+/* Toggler button */
+.navbar-toggler {
+  border: none;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.navbar-toggler-icon {
+  background-image: none; /* hapus default icon bootstrap */
+  width: 24px;
+  height: 2px;
+  background-color: #6f42c1; /* garis ungu */
+  position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #6f42c1;
+  left: 0;
+}
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+.navbar-toggler-icon::after {
+  top: 7px;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #007bff, #6f42c1); 
+  padding: 100px 0; 
+  color: white;
+}
+
+/* Text Styling */
+#hero h1, 
+#hero h3, 
+#hero p {
+  color: #fff;
+}
+
+#hero h3 {
+  color: #ffdd57; 
+}
+
+/* Responsive image */
+#hero img {
+  width: 250px;          
+  height: 250px;        
+  object-fit: cover;     
+  border-radius: 50%;   
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  margin-top: 20px;
+}
+
+/* Atur jarak button */
+#hero .btn {
+  margin-top: 15px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  #hero {
+    padding-top: 140px; /* lebih besar di layar kecil karena navbar bisa lebih tinggi */
+  }
+  
+  #hero h1 {
+    font-size: 2rem;
+  }
+  
+  #hero h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(135deg, #f8f9fa, #e8eaf6); 
+  color: #333;
+}
+
+#about h2 {
+  color: #6f42c1; 
+  font-size: 2.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+#about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #6f42c1;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Card style tiap kolom */
+#about .col-md-4 {
+  background: #fff;
+  padding: 25px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+#about .col-md-4:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Ikon */
+.about-icon {
+  font-size: 2.5rem;
+  color: #6f42c1; 
+  margin-bottom: 12px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#about .col-md-4:hover .about-icon {
+  transform: scale(1.2) rotate(5deg);
+  color: #007bff; 
+}
+
+/* Judul kecil & paragraf */
+#about h5 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+#about p {
+  color: #666;
+  margin: 0;
+}
+
+/* Projects */
+#projects {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 60px 0;
+  color: white;
+}
+
+/* Judul Section */
+#projects h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Card Container */
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Card Style */
+.project-cards .card {
+  flex: 1 1 300px;
+  max-width: 320px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Card */
+.project-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Gambar Card */
+.card img {
+  width: 100%;
+  height: 220px;   /* paksa semua sama tinggi */
+  object-fit: cover; /* crop otomatis biar gak gepeng */
+}
+.project-cards .card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Isi Card */
+.project-cards .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Judul Project */
+.project-cards .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Tombol View Details */
+.project-cards .btn {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.project-cards .btn:hover {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+/* Background Section */
+#testimonials {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+/* Judul */
+#testimonials h2 {
+  font-weight: bold;
+  color: #ffe259;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Box Testimonial */
+.testimonial-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 600px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.testimonial-box p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.testimonial-box h6 {
+  font-weight: bold;
+  color: #ffe259;
+}
+
+/* Tombol Navigasi Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  background-color: #ffe259;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Indicator Bulatan */
+.carousel-indicators {
+  bottom: -30px;
+}
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ffe259;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.carousel-indicators .active {
+  width: 14px;
+  height: 14px;
+  background-color: #ff6a00;
+  box-shadow: 0 0 10px rgba(255,106,0,0.8);
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(135deg, #f9f9ff, #e8e8ff); /* gradasi lembut */
+  color: #333;
+  padding: 80px 0;
+}
+
+#contact h2 {
+  color: #6c3df4; /* ungu biar serasi */
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+#contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #6c3df4;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #6c3df4;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ffb400; /* hover kuning biar nyambung sama tombol More Details */
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  color: white;
+  padding: 40px 0;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

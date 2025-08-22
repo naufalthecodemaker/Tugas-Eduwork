@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MyProfile</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start">
+        <h5>Hi, I am</h5>
+        <h1 class="fw-bold">Naufal Rahman</h1>
+        <h3 class="text-warning">Web Developer</h3>
+        <p>Here is my profile details.</p>
+        <a href="#about" class="btn btn-warning btn-md">More Details</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="images/profile.jpg" alt="Profile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Me -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Me</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><i class="bi bi-person about-icon"></i><h5>Full Name</h5><p>Naufal Rahman</p></div>
+      <div class="col-md-4"><i class="bi bi-mortarboard about-icon"></i><h5>Education</h5><p>University XYZ</p></div>
+      <div class="col-md-4"><i class="bi bi-briefcase about-icon"></i><h5>Job</h5><p>Freelancer</p></div>
+      <div class="col-md-4"><i class="bi bi-telephone about-icon"></i><h5>Contact</h5><p>+62 812 3456 789</p></div>
+      <div class="col-md-4"><i class="bi bi-book about-icon"></i><h5>Hobbies</h5><p>Coding, Reading</p></div>
+      <div class="col-md-4"><i class="bi bi-geo-alt about-icon"></i><h5>Address</h5><p>Jakarta, Indonesia</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio1.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio2.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio3.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio1.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 4</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio2.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 5</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal5">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="images/portofolio3.jpg" class="card-img-top" alt="Project">
+          <div class="card-body">
+            <h5 class="card-title">Project 6</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal6">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal 1-->
+<div class="modal fade" id="projectModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 1 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="projectModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 2 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3-->
+<div class="modal fade" id="projectModal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 3 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4-->
+<div class="modal fade" id="projectModal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 4 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5-->
+<div class="modal fade" id="projectModal5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 5 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6-->
+<div class="modal fade" id="projectModal6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="">
+        <p>Detail project 6 description goes here...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">✨ Testimonials ✨</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicator Bullets -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner text-center">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-box">
+            <p class="lead">"Great developer, delivered on time!"</p>
+            <h6>- Client A</h6>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-box">
+            <p class="lead">"Very professional and easy to work with."</p>
+            <h6>- Client B</h6>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="testimonial-box">
+            <p class="lead">"Amazing work! Exceeded my expectations."</p>
+            <h6>- Client C</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Contact Me</h2>
+    <p>Email: <a href="mailto:john@example.com">naufalrahman867@gmail.com</a></p>
+    <p>Phone: +62 812 3456 789</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Naufal Rahman | Built with Bootstrap</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
